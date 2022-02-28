@@ -25,6 +25,10 @@
 	const { date, name, launchSuccess, rocket, launchSite, link } = mission;
 </script>
 
+<svelte:head>
+	<title>Misiones</title>
+</svelte:head>
+
 <article>
 	<h1 class="text-4xl">{name}</h1>
 	<time>{new Date(date)}</time>

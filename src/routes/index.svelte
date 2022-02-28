@@ -17,6 +17,10 @@
 	export let launches;
 </script>
 
+<svelte:head>
+	<title>Lanzamientos</title>
+</svelte:head>
+
 <div>
 	{#each launches as { slug, name, date }}
 		<Card {slug} {name} {date} />
